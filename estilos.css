@@ -1,0 +1,370 @@
+* { 
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 2;
+  background-color: #eaf4ea;
+  color: #333;
+  padding: 20px;
+}
+
+/* Encabezado */
+header {
+  background-color: #326ef0;
+  color: rgb(244, 243, 242);
+  padding: 20px;
+  text-align: center;
+}
+
+/* Navegación */
+nav ul {
+  list-style: none;
+  background-color: #acf35c;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  padding: 15px 20px;
+}
+
+nav ul li a {
+  color: rgb(69, 3, 3);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Contenido principal */
+main {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 20px;
+  color: #0f0f0f;
+}
+
+/* Estilos para los paquetes */
+.paquete {
+  background-color: rgb(255, 255, 255);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease-in-out;
+}
+
+.paquete:hover {
+  transform: scale(1.02);
+}
+
+/* Título de cada paquete */
+.paquete h3 {
+  color: #0f0f0f;
+  margin-bottom: 20px;
+}
+
+/* Descripción del paquete */
+.paquete p {
+  margin-bottom: 10px;
+}
+
+/* Estilo para tipo de paquete */
+.tipo-paquete {
+  font-weight: bold;
+  color: #2980b9;
+  margin-bottom: 10px;
+  display: inline-block;
+}
+
+/* Imagen del paquete */
+.paquete img {
+  width: 100%;
+  max-width: 600px;
+  border-radius: 15px;
+  margin-bottom: 15px;
+  display: block;
+}
+
+/* Pie de página */
+footer {
+  margin-top: 40px;
+  text-align: center;
+  padding: 15px;
+  background-color: #326ef0;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Interacción con inputs y selects */
+input:focus, select:focus {
+  background-color: rgb(114, 231, 249);
+}
+
+input:hover, select:hover {
+  background-color: rgb(195, 173, 253);
+}
+
+/* Galería de imágenes */
+.galeria {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.galeria img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  transition: transform 0.3s ease;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+.destinos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.boton-destino {
+  display: inline-block;
+  padding: 15px 25px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.boton-destino:hover {
+  background-color: #2980b9;
+}
+
+.volver {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.boton-volver {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #6fcaf1;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.boton-volver:hover {
+  background-color: #2737ae;
+}
+
+/* Menú de navegación mejorado */
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  background-color: #2980b9;
+  padding: 0;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  padding: 15px 20px;
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover,
+nav ul li a.activo {
+  background-color: #1c5985;
+}
+
+/* Dropdown */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #3498db;
+  min-width: 160px;
+  z-index: 1;
+  top: 100%;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown-content li a {
+  padding: 12px 16px;
+  display: block;
+  color: white;
+}
+
+/* Bienvenida */
+.bienvenida {
+  text-align: center;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  border-radius: 20px;
+}
+
+.btn-accion {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  border-radius: 6px;
+  font-weight: bold;
+}
+
+.btn-accion:hover {
+  background-color: #7ef5af;
+}
+
+/* Destinos destacados */
+.destacados {
+  margin-top: 50px;
+  text-align: center;
+}
+
+.destinos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+
+.card img {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+/* Carousel */
+.carousel {
+  position: relative;
+  max-width: 700px;
+  margin: 30px auto;
+}
+
+.carousel img {
+  width: 100%;
+  display: none;
+  border-radius: 10px;
+}
+
+.carousel img.active {
+  display: block;
+}
+
+.carousel button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0,0,0,0.6);
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.carousel .prev {
+  left: 30px;
+}
+
+.carousel .next {
+  right: 30px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .paquete img,
+  .card img,
+  .carousel img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  .carousel button {
+    font-size: 18px;
+    padding: 8px;
+    top: 45%;
+  }
+
+  .galeria {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 10px;
+  }
+
+  .destinos {
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    padding: 10px;
+  }
+
+  body {
+    padding: 10px;
+  }
+
+  .bienvenida {
+    padding: 15px;
+  }
+
+  .boton-volver,
+  .btn-accion,
+  .boton-destino {
+    width: 90%;
+    padding: 12px;
+    font-size: 1rem;
+    margin: 10px auto;
+    display: block;
+    text-align: center;
+  }
+}

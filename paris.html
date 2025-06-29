@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>París - Tour Cultural</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>París, Francia</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="paris.html">París</a></li>
+      <li><a href="tokio.html">Tokio</a></li>
+      <li><a href="rio.html">Río de Janeiro</a></li>
+      <li><a href="kaikoura.html">Kaikoura</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="paquete">
+      <h2 class="titulo-paquete">Tour Cultural: Descubre la magia de París</h2>
+
+      <div class="contenido-tour">
+        <img src="ima/7.jpg" alt="Vista de la Torre Eiffel" class="imagen-tour" onclick="mostrarModal('París, Francia', this.src)">
+
+        <div class="info-tour">
+          <p><strong>Incluye:</strong></p>
+          <ul>
+            <li>Visita a la Torre Eiffel</li>
+            <li>Entrada al Museo del Louvre</li>
+            <li>Paseo guiado por Montmartre</li>
+            <li>Hotel céntrico 4 estrellas con desayuno</li>
+            <li>Guía turístico en español</li>
+          </ul>
+          <p><strong>Duración:</strong> 5 días / 4 noches</p>
+        </div>
+      </div>
+    </section>
+
+    <h3 class="titulo-paquete">Galería de París</h3>
+    <div class="galeria">
+      <img src="ima/1p.jpg" alt="Vista de la Torre Eiffel">
+      <img src="ima/5.jpg" alt="Museo del Louvre">
+      <img src="ima/6.jpg" alt="Montmartre">
+    </div>
+
+    <div class="volver">
+      <a href="paquetes.html" class="boton-volver">← Volver a Paquetes</a>
+    </div>
+  </main>
+
+  <footer>&copy; Viajes Increíbles</footer>
+
+  <!-- Modal para imagen ampliada -->
+  <div id="modal" class="modal" onclick="cerrarModal()">
+    <span id="modal-text"></span>
+    <img id="modal-img" />
+  </div>
+
+  <script>
+    function mostrarModal(titulo, src) {
+      document.getElementById("modal-img").src = src;
+      document.getElementById("modal-text").innerText = titulo;
+      document.getElementById("modal").style.display = "flex";
+    }
+
+    function cerrarModal() {
+      document.getElementById("modal").style.display = "none";
+    }
+  </script>
+</body>
+</html>

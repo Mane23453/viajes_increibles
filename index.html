@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Inicio - Viajes Increíbles</title>
+  <link rel="stylesheet" href="estilos.css" />
+</head>
+<body>
+  <header>
+    <h1>VIAJES INCREIBLES</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html" class="activo">Inicio</a></li>
+      <li class="dropdown">
+        <!--a href="#" class="dropbtn">Destinos</a-->
+        <ul class="dropdown-content">
+          <li><a href="destinos.html#europa">Europa</a></li>
+          <li><a href="destinos.html#asia">Asia</a></li>
+          <li><a href="destinos.html#america">América</a></li>
+          <li><a href="destinos.html#oceania">Oceania</a></li>
+        </ul>
+      </li>
+      <li><a href="destinos.html">Destinos</a></li>
+      <li><a href="paquetes.html">Paquetes</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section class="bienvenida">
+      <h2>Bienvenido a tu próxima aventura</h2>
+      <font color="green" size=10 face="arial">Explora el mundo con nuestros paquetes diseñados especialmente para ti. Cultura, aventura, playas y naturaleza, todo en un solo lugar.</font> <br>
+      <!--a href="paquetes.html" class="btn-accion">Ver Paquetes</a-->
+    </section>
+
+    <section class="carousel">
+      <img src="ima/1.jpg" class="active" alt="Viaje 1" />
+      <img src="ima/2.jpg" alt="Viaje 2" />
+      <img src="ima/3.jpg" alt="Viaje 3" />
+      <img src="ima/4.jpg" alt="Viaje 4" />
+      <button class="prev">&#10094;</button>
+      <button class="next">&#10095;</button>
+    </section>
+
+    <section class="destacados">
+      <h3>Destinos más buscados</h3>
+      <div class="destinos">
+        <div class="card">
+          <img src="ima/paris.jpg" alt="París">
+          <h4>París</h4>
+        </div>
+        <div class="card">
+          <img src="ima/japon.jpg" alt="Tokio">
+          <h4>Tokio</h4>
+        </div>
+        <div class="card">
+          <img src="ima/rio.jpg" alt="Río de Janeiro">
+          <h4>Río de Janeiro</h4>
+        </div>
+        <div class="card">
+          <img src="ima/kaiko.jpg" alt="Kaikoura">
+          <h4>Kaikoura</h4>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Viajes Increíbles | Diseñado con pasión por los viajes</p>
+  </footer>
+
+  <script src="animaciones.js"></script>
+</body>
+</html>   
